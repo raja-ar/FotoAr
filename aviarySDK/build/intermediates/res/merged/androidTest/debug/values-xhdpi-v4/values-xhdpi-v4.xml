@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/FotoAr/aviarySDK/build/intermediates/bundles/debug/res/values-xhdpi-v4/values-xhdpi-v4.xml -->
+    <eat-comment/>
+    <dimen name="aviary_textSizeMedium">14sp</dimen>
+    <dimen name="aviary_textSizeSmall">12sp</dimen>
+</resources>

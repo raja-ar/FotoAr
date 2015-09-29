@@ -1,0 +1,88 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* LICENSE
+* README.md
+* build.xml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => aviarySDK\src\main\AndroidManifest.xml
+* libs\abtest.jar => aviarySDK\libs\abtest.jar
+* libs\annotations-10.0.2.jar => aviarySDK\libs\annotations-10.0.2.jar
+* libs\armeabi-v7a\libaviary_moalite.so => aviarySDK\src\main\jniLibs\armeabi-v7a\libaviary_moalite.so
+* libs\armeabi-v7a\libaviary_native.so => aviarySDK\src\main\jniLibs\armeabi-v7a\libaviary_native.so
+* libs\armeabi-v7a\libexif_extended.so => aviarySDK\src\main\jniLibs\armeabi-v7a\libexif_extended.so
+* libs\armeabi\libaviary_moalite.so => aviarySDK\src\main\jniLibs\armeabi\libaviary_moalite.so
+* libs\armeabi\libaviary_native.so => aviarySDK\src\main\jniLibs\armeabi\libaviary_native.so
+* libs\armeabi\libexif_extended.so => aviarySDK\src\main\jniLibs\armeabi\libexif_extended.so
+* libs\aviary-cds-library.jar => aviarySDK\libs\aviary-cds-library.jar
+* libs\aviary-common-library.jar => aviarySDK\libs\aviary-common-library.jar
+* libs\aviary-headless-library.jar => aviarySDK\libs\aviary-headless-library.jar
+* libs\aviary-receipt-library.jar => aviarySDK\libs\aviary-receipt-library.jar
+* libs\aviary-sdk-library.jar => aviarySDK\libs\aviary-sdk-library.jar
+* libs\aviary-tracking.jar => aviarySDK\libs\aviary-tracking.jar
+* libs\horizontallistview.jar => aviarySDK\libs\horizontallistview.jar
+* libs\imageviewtouch.jar => aviarySDK\libs\imageviewtouch.jar
+* libs\listviewanimations.jar => aviarySDK\libs\listviewanimations.jar
+* libs\nineoldandroids-2.4.0.jar => aviarySDK\libs\nineoldandroids-2.4.0.jar
+* libs\okhttp-1.2.1-jar-with-dependencies.jar => aviarySDK\libs\okhttp-1.2.1-jar-with-dependencies.jar
+* libs\picasso.jar => aviarySDK\libs\picasso.jar
+* libs\stickylistheaders_lib.jar => aviarySDK\libs\stickylistheaders_lib.jar
+* libs\x86\libaviary_moalite.so => aviarySDK\src\main\jniLibs\x86\libaviary_moalite.so
+* libs\x86\libaviary_native.so => aviarySDK\src\main\jniLibs\x86\libaviary_native.so
+* libs\x86\libexif_extended.so => aviarySDK\src\main\jniLibs\x86\libexif_extended.so
+* res\ => aviarySDK\src\main\res\
+* src\ => aviarySDK\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

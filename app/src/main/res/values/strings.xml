@@ -1,0 +1,37 @@
+<!--
+  ~    Copyright 2015 Azmeer Raja
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">FotoAr </string>
+    <string name="action_settings">Settings</string>
+    <string name="aviary_secret">e264f273-3d17-4315-8de1-3715c8eaf45a</string>
+    <string name="aviary_id">40f5cfbc002549e19d4738b3cf31be13</string>
+	    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help me fix this by sending us error data, all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report...</string>
+    <string name="crash_notif_title">App crashed...</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+    <string name="launch_editor">Edit</string>
+    <string name="choose_photo">Choose a Photo</string>
+    <string name="external_storage_na_title">Attention</string>
+    <string name="external_storage_na_message">sdcard is missing or currently not mounted. Cannot continue.</string>
+    <string name="get_mobile_library">Get Android Library</string>
+    <string name="view_documentation">About Developer</string>
+    <string name="hi_res_service_label">HI-RES Service</string>
+    <string name="crash_toast_text">Ooooops! I crashed, but a report has been sent to my developer to help him fix the issue!</string>
+    <string name="image_details">Image Details</string>
+    <string name="title_activity_about_developer">Apps By Developer</string>
+</resources>

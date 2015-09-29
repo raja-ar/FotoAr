@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    Copyright 2015 Azmeer Raja
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raja.fotoar"
+  >
+
+
+
+    <!-- REQUIRED PERMISSIONS -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Google billing permissions -->
+
+
+    <!-- OPTIONAL PERMISSION, used to enhance the wheel experience -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.raja.fotoar.MainApplication"
+        android:largeHeap="true"
+        android:allowBackup="false" >
+        <activity
+            android:name="com.raja.fotoar.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified"
+            android:theme="@style/BaseTheme.Impl" >
+
+            <!-- required field for launching application from the app list -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- filters to allow this app to receive image intents from the system -->
+            <intent-filter>
+                <action android:name="android.intent.action.CHOOSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- 
+        ======================================================================
+        					AVIARY - REQUIRED ENTRIES
+        ======================================================================
+		-->
+
+        <!-- Main editor -->
+        <activity
+            android:name="com.aviary.android.feather.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:finishOnTaskLaunch="true"
+            android:hardwareAccelerated="true"
+            android:process=":standalone"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AviaryTheme"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <!-- Alert -->
+        <activity
+            android:name="com.aviary.android.feather.AlertActivity"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:theme="@style/AviaryTheme.Dialog">
+            <intent-filter>
+                <action android:name="aviary.intent.action.ALERT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 
+        	Required for the hi-res image processing
+        	The "android:authorities" attribute must be unique, so please use your app's package path in this way:
+        	android:authorities="{your.package.name}.HiResProvider" 
+        -->
+        <provider
+            android:name="com.aviary.android.feather.library.providers.FeatherContentProvider"
+            android:exported="false"
+            android:authorities="com.raja.fotoar.HiResProvider"
+            android:process=":standalone">
+        </provider>
+
+        <!-- CDS Content Service -->
+        <service
+            android:process=":aviarycds"
+            android:name="com.aviary.android.feather.cds.AviaryCdsService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+            </intent-filter>
+        </service>
+
+
+        <!--
+            Cds Content Provider,
+            NOTE that the "authorities" value MUST be formatted in this way:
+            android:authorities="{your.packagename}.AviaryCdsProvider"
+         -->
+        <provider
+            android:name="com.aviary.android.feather.cds.AviaryCdsProvider"
+            android:authorities="com.raja.fotoar.AviaryCdsProvider"
+            android:process=":aviarycds"
+            android:exported="false"
+            android:syncable="true" />
+
+        <!-- CDS Download Receiver -->
+        <receiver
+            android:name="com.aviary.android.feather.cds.AviaryCdsReceiver"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 
+        	get your Aviary API Key for free at http://aviary.com/android
+        	and uncomment the following section, replacing "your_api_key_here" with your api key 
+        -->
+                <meta-data
+                    android:name="com.aviary.android.feather.v1.API_KEY"
+                    android:value="@string/aviary_id" />
+
+<!--
+        ======================================================================
+        						END AVIARY ENTRIES
+        ======================================================================
+         -->
+
+        <!-- image info activity -->
+        <activity
+            android:name="com.raja.fotoar.ImageInfoActivity"
+            android:label="@string/image_details"
+            android:noHistory="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AviaryTheme.Custom.Dialog" />
+        <activity
+            android:name=".DevActivity"
+            android:label="@string/title_activity_about_developer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toolbar1">
+
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.raja.fotoar.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
