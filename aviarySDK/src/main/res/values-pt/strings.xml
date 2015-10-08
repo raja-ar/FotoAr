@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~   Copyright 2015 Azmeer Raja
+  ~
+  ~         Licensed under the Apache License, Version 2.0 (the "License");
+  ~         you may not use this file except in compliance with the License.
+  ~         You may obtain a copy of the License at
+  ~
+  ~             http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~         Unless required by applicable law or agreed to in writing, software
+  ~         distributed under the License is distributed on an "AS IS" BASIS,
+  ~         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~         See the License for the specific language governing permissions and
+  ~         limitations under the License.
+  -->
+
 <resources>
 	<string name="feather_illuminate">Iluminar</string>
 	<string name="feather_details">Detalhes</string>
@@ -6,7 +22,7 @@
 	<string name="feather_effects">Efeitos</string>
 	<string name="feather_auto_enhance_label">Auto</string>
 	<string name="feather_edit_your_photo">Editor de Fotos</string>
-	<string name="feather_error_saving_aviary_folder">Oops, ocorreu um erro ao tentar gravar a imagem na pasta PixAr. Quer tentar gravá-la na pasta por omissão da câmera?</string>
+	<string name="feather_error_saving_aviary_folder">Oops, ocorreu um erro ao tentar gravar a imagem na pasta FotoAR. Quer tentar gravá-la na pasta por omissão da câmera?</string>
 	<string name="feather_new_effects">Novos Efeitos</string>
 	<string name="feather_meme">Meme</string>
 	<string name="feather_whiten">Clarear</string>
@@ -15,7 +31,7 @@
 	<string name="feather_effects_error_update_pack">Desculpe, mas necessita atualizar o plugin para continuar.</string>
 	<string name="feather_effects_end_of_list">Final da lista</string>
 	<string name="feather_close">Fechar</string>
-	<string name="feather_about_dialog_message">O PixAr é a plataforma líder mundial de edição de fotos. Desenvolvedores: saibam como adicioná-lo ao seu aplicativo em minutos.</string>
+	<string name="feather_about_dialog_message">O FotoAR é a plataforma líder mundial de edição de fotos. Desenvolvedores: saibam como adicioná-lo ao seu aplicativo em minutos.</string>
 	<string name="feather_message_button_no">Não, obrigado.</string>
 	<string name="feather_rectangle">Retângulo</string>
 	<string name="feather_revert_dialog_title">Reverter para o original?</string>
@@ -23,7 +39,7 @@
 	<string name="feather_sticker_delete_message">Tem certeza de que deseja remover este autocolante?</string>
 	<string name="feather_mirror">Espelho</string>
 	<string name="feather_infoscreen_bottom_button">Sobre este editor</string>
-	<string name="feather_effects_error_update_editor">Desculpe, mas necessita atualizar o editor PixAr para usar este plugin.</string>
+	<string name="feather_effects_error_update_editor">Desculpe, mas necessita atualizar o editor FotoAR para usar este plugin.</string>
 	<string name="feather_update">Atualizar</string>
 	<string name="feather_effects_error_update_editors">Esta aplicação necessita ser atualizada para poder trabalhar com os conjuntos de efeitos que tem instalados. Toque em \&quot;atualizar\&quot; para os atualizar no Google Play.</string>
 	<string name="feather_filter_pack_updated">Um conjunto de filtros foram atualizados. Clique em OK para recarregar a lista de filtros.</string>
@@ -60,7 +76,7 @@
 	<string name="feather_image_saved_in">Imagem gravada em %1$s. Quer visualizar a imagem gravada?</string>
 	<string name="feather_menu_reset">Repor</string>
 	<string name="feather_custom">Personalizado</string>
-	<string name="feather_infoscreen_text">PixAr é um editor de fotos grátis que os programadores podem incorporar nas suas aplicações em poucos minutos.</string>
+	<string name="feather_infoscreen_text">FotoAR é um editor de fotos grátis que os programadores podem incorporar nas suas aplicações em poucos minutos.</string>
 	<string name="feather_message_text">Este belo pacote de novos efeitos adiciona vazamentos de luz, cores frias, e distorções visuais às suas fotos. Quer dar uma olhada?</string>
 	<string name="feather_stickers">Autocolantes</string>
 	<string name="feather_generic_error_title">Erro</string>
@@ -95,7 +111,7 @@
 	<string name="feather_effects_unknown_error">Erro desconhecido</string>
 	<string name="feather_tool_leave_question">Tem certeza que quer rejeitar as alterações feitas com esta ferramenta?</string>
 	<string name="feather_rotate">Rodar</string>
-	<string name="feather_tool_name">PixAr</string>
+	<string name="feather_tool_name">FotoAR</string>
 	<string name="feather_borders">Molduras</string>
 	<string name="feather_flip">Virar</string>
 	<string name="feather_sticker_name">Demonstração</string>

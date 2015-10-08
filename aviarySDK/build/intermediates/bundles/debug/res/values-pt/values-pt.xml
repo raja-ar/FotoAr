@@ -4,7 +4,7 @@
     <eat-comment/>
     <string name="border_name">Livre</string>
     <string name="confirm_quit_message">Espere! Você não gravou as alterações. Tem certeza que quer fechar este editor?</string>
-    <string name="feather_about_dialog_message">O PixAr é a plataforma líder mundial de edição de fotos. Desenvolvedores: saibam como adicioná-lo ao seu aplicativo em minutos.</string>
+    <string name="feather_about_dialog_message">O FotoAR é a plataforma líder mundial de edição de fotos. Desenvolvedores: saibam como adicioná-lo ao seu aplicativo em minutos.</string>
     <string name="feather_activity_not_found">Desculpe, mas não há nenhuma aplicação no seu aparelho para realizar esta ação. Quer tentar fazer agora download de uma aplicação?</string>
     <string name="feather_adjust">Orientação</string>
     <string name="feather_apply">Aplicar</string>
@@ -36,7 +36,7 @@
     <string name="feather_effects_end_of_list">Final da lista</string>
     <string name="feather_effects_error_loading_pack">Desculpe, mas houve um erro ao carregar o plugin.</string>
     <string name="feather_effects_error_loading_packs">Desculpe mas houve um erro a carregar alguns dos conjuntos de efeitos.</string>
-    <string name="feather_effects_error_update_editor">Desculpe, mas necessita atualizar o editor PixAr para usar este plugin.</string>
+    <string name="feather_effects_error_update_editor">Desculpe, mas necessita atualizar o editor FotoAR para usar este plugin.</string>
     <string name="feather_effects_error_update_editors">Esta aplicação necessita ser atualizada para poder trabalhar com os conjuntos de efeitos que tem instalados. Toque em \"atualizar\" para os atualizar no Google Play.</string>
     <string name="feather_effects_error_update_multiple">É necessário atualizar esta aplicação e alguns dos conjuntos de efeitos instalados. Toque em \"atualizar\" para os atualizar todos no Google Play. Esta aplicação pode não funcionar corretamente se não for tudo atualizado para a versão mais recente.</string>
     <string name="feather_effects_error_update_pack">Desculpe, mas necessita atualizar o plugin para continuar.</string>
@@ -46,7 +46,7 @@
     <string name="feather_enhance">Realçar</string>
     <string name="feather_enter_text_here">Escreva o texto aqui</string>
     <string name="feather_error_download_image_message">Houve um erro fazer download da imagem. Tente novamente mais tarde.</string>
-    <string name="feather_error_saving_aviary_folder">Oops, ocorreu um erro ao tentar gravar a imagem na pasta PixAr. Quer tentar gravá-la na pasta por omissão da câmera?</string>
+    <string name="feather_error_saving_aviary_folder">Oops, ocorreu um erro ao tentar gravar a imagem na pasta FotoAR. Quer tentar gravá-la na pasta por omissão da câmera?</string>
     <string name="feather_error_saving_image">Oops, ocorreu um erro ao tentar gravar a imagem.</string>
     <string name="feather_feedback">Comentário</string>
     <string name="feather_feedback_dialog_message">Tem uma sugestão para melhorar este editor de fotos? Conte para nós.</string>
@@ -57,7 +57,7 @@
     <string name="feather_illuminate">Iluminar</string>
     <string name="feather_image_saved_in">Imagem gravada em %1$s. Quer visualizar a imagem gravada?</string>
     <string name="feather_infoscreen_bottom_button">Sobre este editor</string>
-    <string name="feather_infoscreen_text">PixAr é um editor de fotos grátis que os programadores podem incorporar nas suas aplicações em poucos minutos.</string>
+    <string name="feather_infoscreen_text">FotoAR é um editor de fotos grátis que os programadores podem incorporar nas suas aplicações em poucos minutos.</string>
     <string name="feather_keep_editing">Continuar a editar</string>
     <string name="feather_loading_image">A carregar imagem...</string>
     <string name="feather_loading_title">A carregar</string>
@@ -94,7 +94,7 @@
     <string name="feather_text">Texto</string>
     <string name="feather_tool">Ferramenta</string>
     <string name="feather_tool_leave_question">Tem certeza que quer rejeitar as alterações feitas com esta ferramenta?</string>
-    <string name="feather_tool_name">PixAr</string>
+    <string name="feather_tool_name">FotoAR</string>
     <string name="feather_tool_temperature">Temperatura</string>
     <string name="feather_tool_tiltshift">Foco</string>
     <string name="feather_update">Atualizar</string>
