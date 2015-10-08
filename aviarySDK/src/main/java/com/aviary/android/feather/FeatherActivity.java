@@ -809,7 +809,7 @@ public class FeatherActivity extends MonitoredActivity implements OnToolbarClick
 			}
 		};
 
-		final Dialog dialog = createBaseDialog( R.string.feather_about_dialog_message, "PixAr for Android", listener );
+		final Dialog dialog = createBaseDialog( R.string.feather_about_dialog_message, "FotoAr for Android", listener );
 		return dialog;
 	}
 
@@ -1293,7 +1293,7 @@ public class FeatherActivity extends MonitoredActivity implements OnToolbarClick
 			if ( null != path ) {
 				thread.submit( new ExifTask(), listener, path );
 			} else {
-				logger.warn( "orinal file path not available" );
+				logger.warn( "original file path not available" );
 			}
 		}
 	}
@@ -1550,7 +1550,7 @@ public class FeatherActivity extends MonitoredActivity implements OnToolbarClick
 			// no output uri declared, save the image in a new path
 			// and return it
 
-			String url = Media.insertImage( getContentResolver(), bitmap, "title", "modified with Pixar" );
+			String url = Media.insertImage( getContentResolver(), bitmap, "title", "modified with FotoAr" );
 			if ( url != null ) {
 				saveUri = Uri.parse( url );
 				getContentResolver().notifyChange( saveUri, null );
@@ -1624,7 +1624,7 @@ public class FeatherActivity extends MonitoredActivity implements OnToolbarClick
 					newexif.setAttribute( ExifInterfaceExtended.TAG_JPEG_IMAGE_HEIGHT, String.valueOf( imageLength ) );
 
 					newexif.setAttribute(ExifInterfaceExtended.TAG_EXIF_ORIENTATION, "0");
-					newexif.setAttribute(ExifInterfaceExtended.TAG_EXIF_SOFTWARE, "PixAr for Android ");
+					newexif.setAttribute(ExifInterfaceExtended.TAG_EXIF_SOFTWARE, "FotoAr for Android ");
 					newexif.setAttribute(ExifInterfaceExtended.TAG_EXIF_ARTIST,"Raja Ar");
 					newexif.saveAttributes();
 				} catch ( Throwable t ) {

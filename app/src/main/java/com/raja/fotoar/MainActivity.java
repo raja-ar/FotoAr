@@ -654,9 +654,9 @@ public class MainActivity extends Activity {
 
 		
 		 newIntent.putExtra( "tools-list", new String[] {
-//			 FilterLoaderFactory.Filters.ENHANCE.name(),
-//			 FilterLoaderFactory.Filters.EFFECTS.name(), 
-//			 FilterLoaderFactory.Filters.STICKERS.name(),
+			 FilterLoaderFactory.Filters.ENHANCE.name(),
+			 FilterLoaderFactory.Filters.EFFECTS.name(),
+			 FilterLoaderFactory.Filters.STICKERS.name(),
 			 FilterLoaderFactory.Filters.CROP.name(),
 			 FilterLoaderFactory.Filters.TILT_SHIFT.name(),
 			 FilterLoaderFactory.Filters.ADJUST.name(),
@@ -665,13 +665,13 @@ public class MainActivity extends Activity {
 			 FilterLoaderFactory.Filters.SATURATION.name(),
  			 FilterLoaderFactory.Filters.COLORTEMP.name(),
 			 FilterLoaderFactory.Filters.SHARPNESS.name(),
-//			 FilterLoaderFactory.Filters.COLOR_SPLASH.name(),
-//			 FilterLoaderFactory.Filters.DRAWING.name(), 
+			 FilterLoaderFactory.Filters.COLOR_SPLASH.name(),
+			 FilterLoaderFactory.Filters.DRAWING.name(),
 			 FilterLoaderFactory.Filters.TEXT.name(),
-//			 FilterLoaderFactory.Filters.RED_EYE.name(), 
-//			 FilterLoaderFactory.Filters.WHITEN.name(), 
-//			 FilterLoaderFactory.Filters.BLEMISH.name(),
-//			 FilterLoaderFactory.Filters.MEME.name(),
+		 FilterLoaderFactory.Filters.RED_EYE.name(),
+			 FilterLoaderFactory.Filters.WHITEN.name(),
+			 FilterLoaderFactory.Filters.BLEMISH.name(),
+			 FilterLoaderFactory.Filters.MEME.name(),
 		 } );
 		 
 

@@ -1,17 +1,17 @@
 /*
- *    Copyright 2015 Azmeer Raja
+ * Copyright 2015 Azmeer Raja
  *
- *      Licensed under the Apache License, Version 2.0 (the "License");
- *      you may not use this file except in compliance with the License.
- *      You may obtain a copy of the License at
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
  *
- *          http://www.apache.org/licenses/LICENSE-2.0
+ *       http://www.apache.org/licenses/LICENSE-2.0
  *
- *      Unless required by applicable law or agreed to in writing, software
- *      distributed under the License is distributed on an "AS IS" BASIS,
- *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *      See the License for the specific language governing permissions and
- *      limitations under the License.
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
  */
 
 package com.raja.fotoar;
@@ -38,7 +38,6 @@ import com.nineoldandroids.view.ViewHelper;
 public class DevActivity extends AppCompatActivity implements ObservableScrollViewCallbacks, View.OnClickListener {
 
     private View mImageView;
-
     private View mToolbarView;
     private ObservableScrollView mScrollView;
     private int mParallaxImageHeight;
@@ -49,11 +48,16 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         setContentView(R.layout.activity_dev);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
+
+
         //Set and Define Imageviews id
-        ImageView maari = (ImageView) findViewById(R.id.maari);
         ImageView knowme = (ImageView) findViewById(R.id.knowme);
+        ImageView bwar =(ImageView) findViewById(R.id.bwar);
+        ImageView maari = (ImageView) findViewById(R.id.maari);
         ImageView kingcompass = (ImageView) findViewById(R.id.kingcompass);
         ImageView racear = (ImageView) findViewById(R.id.racear);
+        ImageView fotoar =(ImageView) findViewById(R.id.fotoar);
+
 
 
  /*                 Multiple Screen Size Condition             */
@@ -63,20 +67,22 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         if ((getApplicationContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL)
         {
-             //Toast.makeText(getApplication(), "small", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplication(), "small", Toast.LENGTH_SHORT).show();
 
             BitmapFactory.Options options=new BitmapFactory.Options();
             options.inSampleSize=5;
-
-            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
-            maari.setImageBitmap(bm_maari);
             Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
             knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_bwar=BitmapFactory.decodeResource(getResources(),R.drawable.bwar,options);
+            bwar.setImageBitmap(bm_bwar);
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
             Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
             kingcompass.setImageBitmap(bm_compass);
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
-
+            Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
+            fotoar.setImageBitmap(bm_fotoar);
         }
 
         //Normal Size
@@ -84,18 +90,21 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         else if ((getApplicationContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL)
         {
-           // Toast.makeText(getApplication(),"normal" , Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getApplication(),"normal" , Toast.LENGTH_SHORT).show();
             BitmapFactory.Options options=new BitmapFactory.Options();
             options.inSampleSize=3;
-
-            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
-            maari.setImageBitmap(bm_maari);
             Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
             knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_bwar=BitmapFactory.decodeResource(getResources(),R.drawable.bwar,options);
+            bwar.setImageBitmap(bm_bwar);
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
             Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
             kingcompass.setImageBitmap(bm_compass);
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
+            Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
+            fotoar.setImageBitmap(bm_fotoar);
         }
 
         // Large Size
@@ -103,18 +112,22 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         else if ((getApplicationContext().getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE)
         {
-           // Toast.makeText(getApplication(),"large" , Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getApplication(),"large" , Toast.LENGTH_SHORT).show();
             BitmapFactory.Options options=new BitmapFactory.Options();
             options.inSampleSize=2;
 
-            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
-            maari.setImageBitmap(bm_maari);
             Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
             knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_bwar=BitmapFactory.decodeResource(getResources(),R.drawable.bwar,options);
+            bwar.setImageBitmap(bm_bwar);
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
             Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
             kingcompass.setImageBitmap(bm_compass);
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
+            Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
+            fotoar.setImageBitmap(bm_fotoar);
 
         }
 
@@ -126,10 +139,12 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             // Toast.makeText(getApplication(),"xlarge" , Toast.LENGTH_SHORT).show();
 
             // Set What To Show in The Imageview
-            maari.setImageResource(R.drawable.maari);
             knowme.setImageResource(R.drawable.knowme);
+            bwar.setImageResource(R.drawable.bwar);
+            maari.setImageResource(R.drawable.maari);
             kingcompass.setImageResource(R.drawable.kingcompass);
             racear.setImageResource(R.drawable.racear);
+            fotoar.setImageResource(R.drawable.fotoar);
 
         }
 
@@ -137,18 +152,22 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
 
         else
         {
-             // Toast.makeText(getApplication(), "undefined", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(getApplication(), "undefined", Toast.LENGTH_SHORT).show();
             BitmapFactory.Options options=new BitmapFactory.Options();
             options.inSampleSize=4;
 
-            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
-            maari.setImageBitmap(bm_maari);
             Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
             knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_bwar=BitmapFactory.decodeResource(getResources(),R.drawable.bwar,options);
+            bwar.setImageBitmap(bm_bwar);
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
             Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
             kingcompass.setImageBitmap(bm_compass);
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
+            Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
+            fotoar.setImageBitmap(bm_fotoar);
 
         }
 
@@ -156,10 +175,12 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
 
 
         //Set On CLick Listeners
-        maari.setOnClickListener(this);
         knowme.setOnClickListener(this);
+        bwar.setOnClickListener(this);
+        maari.setOnClickListener(this);
         kingcompass.setOnClickListener(this);
         racear.setOnClickListener(this);
+        fotoar.setOnClickListener(this);
 
 
 
@@ -176,7 +197,6 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
 
 
     }
-
 
 
     @Override
@@ -207,16 +227,6 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.maari: {
-
-
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.android.maari")));
-                } catch (android.content.ActivityNotFoundException anfe) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.android.maari")));
-                }
-            }
-            break;
             case R.id.knowme: {
 
 
@@ -227,6 +237,28 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
             }
             break;
+            case R.id.bwar: {
+
+
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.bwar")));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.bwar")));
+                }
+            }
+            break;
+
+            case R.id.maari: {
+
+
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.android.maari")));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.android.maari")));
+                }
+            }
+            break;
+
             case R.id.kingcompass: {
 
                 try {
@@ -245,9 +277,18 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
 
             }
+            break;
+            case R.id.fotoar:{
+
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.raja.fotoar")));
+                } catch (android.content.ActivityNotFoundException anfe){
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.raja.fotoar")));
+                }
+
+            }
 
         }
     }
 
 }
-
